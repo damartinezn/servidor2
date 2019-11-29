@@ -13,6 +13,10 @@ app.get('/hola',(req,res)=>{
 	res.send({message: "hola mundo"})
 })
 
+app.get('/hola/:name',(req,res)=>{
+	res.send({message: `hola prro ${name}`})
+})
+
 
 app.listen(port, ()=>{
 	console.log('API REST corriendo en http://localhost:${port}')
