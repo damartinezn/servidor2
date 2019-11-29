@@ -13,8 +13,8 @@ app.get('/hola',(req,res)=>{
 	res.send({message: "hola mundo"})
 })
 
-app.get('/hola/:name',(req,res)=>{
-	res.send({message: `hola prro ${name}`})
+app.get('/hola/:name', (req, res)=>{
+	res.send({menssage:`Hola ${req.params.name}`})
 })
 
 
